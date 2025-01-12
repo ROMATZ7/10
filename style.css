@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #FFB6C1, #FFC0CB); /* Fondo rosado degradado */
+    color: white;
+    text-align: center;
+}
+
+#password-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #FFB6C1, #FFC0CB);
+    color: white;
+}
+
+#password-screen input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    text-align: center;
+}
+
+#password-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF69B4; /* Rosa fuerte */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#password-screen button:hover {
+    background-color: #FFC0CB; /* Rosa claro */
+}
+
+.hidden {
+    display: none;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FF69B4; /* Rosa fuerte */
+    text-shadow: 2px 2px #FFC0CB; /* Sombra rosada */
+}
+
+#countdown {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #FFC0CB; /* Rosa claro */
+    border: 3px solid #FF69B4; /* Rosa fuerte */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #FF69B4; /* Rosa fuerte */
+    border-radius: 50%;
+    position: absolute;
+    animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #FF69B4; /* Rosa fuerte */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC0CB; /* Rosa claro */
+}
