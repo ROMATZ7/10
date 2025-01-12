@@ -81,7 +81,7 @@ gameArea.addEventListener("click", (e) => {
 
         if (clickIndex === points.length) {
             if (level === 4) {
-                messageElement.textContent = "🎉  Has completado todos los niveles. Contraseña: N0z4BESCUANT0T3AwO.Continua PULSANDO EL CACTUS ";
+                messageElement.textContent = "🎉  Has completado todos los niveles.Continua PULSANDO EL CACTUS ";
                 gameStarted = false;
             } else {
                 level++;
